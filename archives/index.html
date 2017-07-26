@@ -93,7 +93,7 @@
             
               <li class="archive-list-container">
                 <a href="javascript:;">归档</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a><span class="archive-list-count">2</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a><span class="archive-list-count">1</span></li></ul>
               </li>
             
           
@@ -247,48 +247,6 @@
 </code></pre><p>在这要注意在执行setTimeout前用一个变量(child)来保存动画对象。因为在setTimeout中this指向的是window。有可能导致对象的丢失。</p>
 <p>用setTimeout并不能完美解决动画累积，因为在执行动画时，如果我们再次触发事件还是会进行累积，这点在click事件中尤为明显。所以在click事件中推荐用stop()解决问题。</p>
 <h2 id="个人看法"><a href="#个人看法" class="headerlink" title="个人看法"></a>个人看法</h2><p>最后说一些个人看法吧，在动画时间短或瞬间执行完成的hover事件中个人倾向用setTimeout解决（想象一下一个大型模态框在你鼠标不小心划过触发元素时就瞬间弹出了…）。而在click事件中用stop()解决动画累积问题。</p>
-
-        
-      </div>
-    </div>
-
-  
-
-  
-  
-    
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2017/02/14/hello-world/" >
-  Hello World
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2017/02/14/hello-world/"><span class="article-date">
-  2017-02-14
-</span>
-</a>
-        
-
-        
-
-      </div>
-      <div class="article-entry">
-        
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
         
       </div>
