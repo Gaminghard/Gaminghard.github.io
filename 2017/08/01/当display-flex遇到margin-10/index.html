@@ -8,16 +8,26 @@
 
 <title>
   
-    归档: 2017
+    当display:flex遇到margin:10%
   
 </title>
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Gaminghard">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+<meta name="description" content="最近发现了CSS中关于单位：%  的一些有趣的东西。让我之前遇到了不少BUG，之后就去看了一下这方面的东西，把之前的坑填一下。
+测试版本：Chrome(59.0.3071.115)   Firefox(54.0.1)
+1.当%遇到margin和padding在规定子元素的height和width时，我们常常会用%来设置。它的height和width为它父元素对应数值的百分比。这个非常好理解。那么如">
+<meta property="og:type" content="article">
+<meta property="og:title" content="当display:flex遇到margin:10%">
+<meta property="og:url" content="http://yoursite.com/2017/08/01/当display-flex遇到margin-10/index.html">
 <meta property="og:site_name" content="Gaminghard">
+<meta property="og:description" content="最近发现了CSS中关于单位：%  的一些有趣的东西。让我之前遇到了不少BUG，之后就去看了一下这方面的东西，把之前的坑填一下。
+测试版本：Chrome(59.0.3071.115)   Firefox(54.0.1)
+1.当%遇到margin和padding在规定子元素的height和width时，我们常常会用%来设置。它的height和width为它父元素对应数值的百分比。这个非常好理解。那么如">
+<meta property="og:updated_time" content="2017-08-01T08:57:00.955Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Gaminghard">
+<meta name="twitter:title" content="当display:flex遇到margin:10%">
+<meta name="twitter:description" content="最近发现了CSS中关于单位：%  的一些有趣的东西。让我之前遇到了不少BUG，之后就去看了一下这方面的东西，把之前的坑填一下。
+测试版本：Chrome(59.0.3071.115)   Firefox(54.0.1)
+1.当%遇到margin和padding在规定子元素的height和width时，我们常常会用%来设置。它的height和width为它父元素对应数值的百分比。这个非常好理解。那么如">
 
 
   <link rel="alternative" href="/atom.xml" title="Gaminghard" type="application/atom+xml">
@@ -143,43 +153,26 @@
       
         <div style="max-width: 1000px">
       
-          
-
+          <article id="post-当display-flex遇到margin-10" class="article article-type-post">
+  
+    <h1 class="article-header">
+      当display:flex遇到margin:10%
+    </h1>
   
   
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <h1><a href="/archives/2017" class="archive-year">2017</a></h1>
-        </div>
-        <div class="post-list">
-    
-  
 
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2017/08/01/当display-flex遇到margin-10/" >
-  当display:flex遇到margin:10%
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2017/08/01/当display-flex遇到margin-10/"><span class="article-date">
+  <div class="article-info">
+    <span class="article-date">
   2017-08-01
 </span>
-</a>
-        
 
-        
+    
 
-      </div>
-      <div class="article-entry">
-        
-          <p>最近发现了CSS中关于单位：%  的一些有趣的东西。让我之前遇到了不少BUG，之后就去看了一下这方面的东西，把之前的坑填一下。</p>
+    
+
+  </div>
+  <div class="article-entry">
+    <p>最近发现了CSS中关于单位：%  的一些有趣的东西。让我之前遇到了不少BUG，之后就去看了一下这方面的东西，把之前的坑填一下。</p>
 <p><strong>测试版本：Chrome(59.0.3071.115)   Firefox(54.0.1)</strong></p>
 <h1 id="1-当-遇到margin和padding"><a href="#1-当-遇到margin和padding" class="headerlink" title="1.当%遇到margin和padding"></a>1.当%遇到margin和padding</h1><p>在规定子元素的height和width时，我们常常会用%来设置。它的height和width为它父元素对应数值的百分比。这个非常好理解。那么如果我设置margin: 10%;padding: 10%;呢，margin和padding的值各是多少。下面举一个例子。</p>
 <h3 id="测试代码"><a href="#测试代码" class="headerlink" title="测试代码"></a>测试代码</h3><h4 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h4><pre><code>&lt;body&gt;
@@ -247,116 +240,29 @@
 <p>Firefox：margin 的值为0 60 0 60与之前两次都不同。父元素的height在这里没有作为子元素margin-top和margin-bottom的基准。</p>
 <p><strong>margin和padding取%并且父元素为display:flexs时，会在不同浏览器中产生差异。所以最好用vh、vw、px等单位来兼顾浏览器差异。</strong></p>
 
-        
-      </div>
-    </div>
-
-  
-
-  
-  
+  </div>
+  <footer class="article-footer">
     
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2017/07/26/jQuery中的动画累积问题/" >
-  jQuery中的动画累积问题
-</a>
-
-      </h3>
+  <div class="cc">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.z" target="_blank" title="署名-相同方式共享">
+      <img src="/images/cc/cc.png">
       
-
-      <div class="article-info">
-        <a href="/2017/07/26/jQuery中的动画累积问题/"><span class="article-date">
-  2017-07-26
-</span>
-</a>
+          <img src="/images/cc/by.png">
         
+          <img src="/images/cc/sa.png">
+      
+      <span>
+        本作品采用知识共享 署名-相同方式共享 4.0 国际许可协议进行许可。
+      </span>
+    </a>
+  </div>
 
-        
 
-      </div>
-      <div class="article-entry">
-        
-          <p>在之前用jQuery做hover动画效果时发现当鼠标快速滑入画出触发元素时，动画会出现累积。在执行完一次之后多次执行，直到动画队列执行完毕。很影响动画效果，毕竟鼠标不小心划过都会触发动画。同样当你用click事件多次点击时动画也是会累积。为什么会出现动画累积呢？因为动画的执行需要时间而事件的触发不需要时间间隔，所以会出现动画累积。之后，我找到了两种解决方法。</p>
-<h1 id="1-stop"><a href="#1-stop" class="headerlink" title="1.stop()"></a>1.stop()</h1><p><strong>语法：$(selector).stop(stopAll,goToEnd)</strong></p>
-<p><strong>两个参数的值为true或者false，默认值为false。</strong></p>
-<p><strong>stopAll可选。规定是否停止被选元素的所有加入队列的动画。</strong></p>
-<p><strong>goToEnd    可选。规定是否允许完成当前的动画。该参数只能在设置了 stopAll 参数时使用。</strong></p>
-<p>1.stop()，由于两个参数都是false。所以事件发生时，animater没有跳到当前动画（动画1）的最终效果，而直接进入动画2，然后动画3，4，5.直至完成整个动画。</p>
-<p>2.stop(true)，由于第一个是true，第二个是false，所以animater立刻全部停止了。</p>
-<p>3.stop(false,true)，由于第一个是false，第二个是true，所以事件发生时，animater身处的当前动画（动画1）停止并且animater直接跳到当前动画（动画1）的最终末尾效果位置，接着正常执行下面的动画（动画2，3，4，5），直至完成整个动画。</p>
-<p>4.stop(true，true)，由于两个都是true，所以事件发生时，animater跳到当前动画（动画1）的最终末尾效果位置，然后，全部动画停止。</p>
-<p><strong>stop()的解决思路是当动画累积时，每次动画先停止之前动画，而进行该次动画，即每次执行的是原动画队列中的最后一个动画。</strong></p>
-<h4 id="测试代码："><a href="#测试代码：" class="headerlink" title="测试代码："></a>测试代码：</h4><p>HTML:</p>
-<pre><code>&lt;body&gt;
-    &lt;div class=&quot;out&quot;&gt;
-        &lt;div class=&quot;front&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
-</code></pre><p>CSS:</p>
-<pre><code>.out
-{
-    width: 200px;
-    height: 200px;
-    background-color: black;
-    margin-bottom: 2vh;
-}
-.front
-{
-    position: relative;
-    top: 10%;
-    left: 10%;
-    width: 80%;
-    height: 80%;
-    background-color: red;
-    display: none;
-}
-</code></pre><p>jQuery:</p>
-<pre><code>$(document).ready(function(){  
-         $(&quot;.out&quot;).hover(function()          
-         {
-             $(this).find(&quot;.front&quot;).stop(true);    
-             $(this).find(&quot;.front&quot;).fadeIn(&apos;slow&apos;);
-         },
-         function()
-         {
-             $(this).find(&quot;.front&quot;).stop(true);
-             $(this).find(&quot;.front&quot;).fadeOut(&apos;fast&apos;);
-         })
-     });
-</code></pre><h1 id="2-setTimeout"><a href="#2-setTimeout" class="headerlink" title="2.setTimeout"></a>2.setTimeout</h1><p><strong>语法：setTimeout(code,millisec)</strong></p>
-<p><strong>code必需。要调用的函数后要执行的 JavaScript 代码串。</strong></p>
-<p><strong>millisec必需。在执行代码前需等待的毫秒数。</strong></p>
-<p><strong>setTimeout的解决思路是延迟动画执行时间。而利用setTimeout，我们增长了事件触发到动画执行的时间，如果在这段时间有另一个事件触发我们则清除这个待执行的动画去执行下个动画，以此来解决动画积累。</strong></p>
-<h4 id="测试代码：-1"><a href="#测试代码：-1" class="headerlink" title="测试代码："></a>测试代码：</h4><p>jQuery:</p>
-<pre><code>var timer=null;                                   
-        $(document).ready(function(){
-         $(&quot;.out&quot;).hover(function()
-         {    
-             var child = $(this).find(&quot;.front&quot;);
-             timer=setTimeout(function()
-            {
-                 child.fadeIn(&apos;slow&apos;)
-            },500);
-         },
-         function()
-         {
-             if(timer)
-             clearTimeout(timer);
-             $(this).find(&quot;.front&quot;).fadeOut(&apos;fast&apos;);
-         });
-     });
-</code></pre><p>在这要注意在执行setTimeout前用一个变量(child)来保存动画对象。因为在setTimeout中this指向的是window。有可能导致对象的丢失。</p>
-<p>用setTimeout并不能完美解决动画累积，因为在执行动画时，如果我们再次触发事件还是会进行累积，这点在click事件中尤为明显。所以在click事件中推荐用stop()解决问题。</p>
-<h2 id="个人看法"><a href="#个人看法" class="headerlink" title="个人看法"></a>个人看法</h2><p>最后说一些个人看法吧，在动画时间短或瞬间执行完成的hover事件中个人倾向用setTimeout解决（想象一下一个大型模态框在你鼠标不小心划过触发元素时就瞬间弹出了…）。而在click事件中用stop()解决动画累积问题。</p>
+    
 
-        
-      </div>
-    </div>
+  </footer>
+</article>
 
-  
 
 
 
