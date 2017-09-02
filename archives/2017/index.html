@@ -180,15 +180,14 @@
       <div class="article-entry">
         
           <p>我这里使用的是hexo+github搭建的博客。因为之前多次重装系统导致了博客无法更新（原本hexo文件夹保留），需要重新配置SSH。把重新配置SSH的方法记录下来，以防之后又遇到相同问题。</p>
-<p>#1.准备环境<br><strong>1.安装git</strong></p>
+<h1 id="1-准备环境"><a href="#1-准备环境" class="headerlink" title="1.准备环境"></a>1.准备环境</h1><p><strong>1.安装git</strong></p>
 <p><strong>2.下载安装node.js</strong></p>
 <p><strong>3.运行git，输入npm install hexo-cli -g，安装hexo</strong></p>
-<p>#2.生成SSH</p>
-<p><strong>1.运行git，输入ssh-keygen -t rsa -C “youremail@example.com” （youremail@example.com为你的邮箱地址），之后一直回车下一步。
+<h1 id="2-生成SSH"><a href="#2-生成SSH" class="headerlink" title="2.生成SSH"></a>2.生成SSH</h1><p><strong>1.运行git，输入ssh-keygen -t rsa -C “youremail@example.com” （youremail@example.com为你的邮箱地址），之后一直回车下一步。
 </strong></p>
 <p><strong>2.在你的用户主目录下会生成一个.ssh目录。里面有id_rsa和id_rsa.pub两个文件，前者为私钥，后者为公钥。我们需要用公钥来配置博客。</strong></p>
 <p>（用户主目录一般为C:\Users\Administrator）</p>
-<p>#3.配置到github<br><strong>登录github，进入settings中的SSH and GPG keys，点击new SSH key。随意命名title，在key中输入id_rsa.pub中的全部内容，然后Add SSH Key。
+<h1 id="3-配置到github"><a href="#3-配置到github" class="headerlink" title="3.配置到github"></a>3.配置到github</h1><p><strong>登录github，进入settings中的SSH and GPG keys，点击new SSH key。随意命名title，在key中输入id_rsa.pub中的全部内容，然后Add SSH Key。
 </strong></p>
 <p>这样就完成了SSH的配置。</p>
 
